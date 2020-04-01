@@ -4,8 +4,7 @@
 - Database: SQLite
 
 Here is a screenshot of what the application looks like:
-![Screenshot]([https://i.imgur.com/vuG86hi.png](https://i.imgur.com/vuG86hi.png)
-
+![Screenshot](https://i.imgur.com/vuG86hi.png)
 
 Some notes:
 1. I used pip3 to install pipenv and django 2.1
