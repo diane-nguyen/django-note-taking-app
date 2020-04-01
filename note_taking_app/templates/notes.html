@@ -1,0 +1,18 @@
+<h1> Note taking App</h1>
+
+<ul>
+    {% for single_note in view_all %}
+        <li>{{ single_note.content }}
+        <form action="/deleteNote/{{single_note.id}}/" 
+            style="display: inline;" 
+            method="post">{% csrf_token %}
+            <input type="submit" value="Delete"/>
+        </form>
+        </li>
+    {% endfor %}
+</ul>
+
+<form action="/addNote/" method="post">{% csrf_token %}
+    <input type="text" name="content"/>
+    <input type="submit" value="Add"/>
+</form>
